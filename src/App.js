@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import GlobalStyle from "./styles/globalStyles";
 
 const StyledTitle = styled.h1`
   font-size: 26px;
@@ -9,7 +8,6 @@ const StyledTitle = styled.h1`
 function App() {
   return (
     <>
-      <GlobalStyle />
       <Link to="/order">
         <StyledTitle>Wyjątkowy prezent</StyledTitle>
       </Link>
