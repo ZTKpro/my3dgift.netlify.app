@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
+import Buble from "./component/buble";
+
 const StyledTitle = styled.h1`
   font-size: 26px;
 `;
@@ -11,6 +13,7 @@ function App() {
       <Link to="/order">
         <StyledTitle>Wyjątkowy prezent</StyledTitle>
       </Link>
+      <Buble size="250px" position={[50, 50]} inside />
       <p>
         Wyobraź sobie, że możesz mieć swoją własną, unikalną figurkę 3D
         stworzoną na podstawie Twojego zdjęcia. To możliwe dzięki naszej usłudze
