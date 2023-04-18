@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import GlobalStyle from './styles/globalStyles';
+
 
 const StyledTitle = styled.h1`
 font-size: 26px;
@@ -6,7 +8,8 @@ font-size: 26px;
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <GlobalStyle />
       <StyledTitle>
         Wyjątkowy prezent
       </StyledTitle>
@@ -43,7 +46,7 @@ function App() {
         </p>
       </div>
       <div> Zamów już dziś unikalną figurkę</div>
-    </div>
+    </>
   );
 }
 
